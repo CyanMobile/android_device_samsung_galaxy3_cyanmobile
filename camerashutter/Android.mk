@@ -1,4 +1,4 @@
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),GT-5801)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),g3)
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)

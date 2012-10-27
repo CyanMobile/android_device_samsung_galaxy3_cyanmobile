@@ -1,5 +1,5 @@
 # inherit from the proprietary version
--include vendor/samsung/apollo/BoardConfigVendor.mk
+-include vendor/samsung/g3/BoardConfigVendor.mk
 
 # Board
 TARGET_BOARD_PLATFORM := s5p6442
@@ -13,7 +13,7 @@ TARGET_BOARD_PLATFORM_GPU := fimg
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 TARGET_BOOTLOADER_BOARD_NAME := GT-I5800
 TARGET_OTA_ASSERT_DEVICE := apollo,GT-I5800,GT-I5801
-BOARD_EGL_CFG := vendor/samsung/apollo/proprietary/JPM/egl.cfg
+BOARD_EGL_CFG := vendor/samsung/g3/proprietary/JPM/egl.cfg
 BOARD_NO_RGBX_8888 := true
 BOARD_USE_SCREENCAP := true
 BOARD_VENDOR_USE_AKMD := akm8973
@@ -40,7 +40,6 @@ ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 BUILD_WITH_FULL_STAGEFRIGHT := true
 
-
 # FM Radio
 BOARD_HAVE_FM_RADIO := true
 TARGET_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
@@ -57,15 +56,14 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_FORCE_STATIC_A2DP := true
 
-
-# usb
+# USB
 RNDIS_DEVICE := "/sys/devices/virtual/sec/switch/tethering"
-BOARD_CUSTOM_USB_CONTROLLER := ../../device/samsung/apollo/UsbController.cpp
+BOARD_CUSTOM_USB_CONTROLLER := ../../device/samsung/g3/UsbController.cpp
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/s3c-usbgadget/gadget/lun0/file"
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun0/file"
 
-# Kernel : console=ttySAC1,115200 loglevel=4 no_console_suspend
+# Kernel :
 BOARD_KERNEL_CMDLINE := console=ttySAC1,115200 loglevel=4 no_console_suspende 
 BOARD_KERNEL_BASE := 0x22000000
 BOARD_NAND_PAGE_SIZE := 4096 -s 128
@@ -85,7 +83,7 @@ WIFI_DRIVER_FW_AP_PATH      := "/system/etc/wifi/bcm4329_aps.bin"
 WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/bcm4329_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt dhd_watchdog_ms=10 dhd_poll=1"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
 
-#
+# Misc
 BOARD_RECOVERY_IGNORE_BOOTABLES := true
 BOARD_HAS_NO_RECOVERY_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -96,7 +94,7 @@ BOARD_USES_BOOTMENU := false
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_PROVIDES_BOOTMODE := true
 BOARD_USES_BML_OVER_MTD := false
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/apollo/recovery/recovery_ui.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/g3/recovery/recovery_ui.c
 BOARD_BOOT_DEVICE := /dev/block/bml5
 BOARD_DATA_DEVICE := /dev/block/stl7
 BOARD_DATA_FILESYSTEM := ext4
