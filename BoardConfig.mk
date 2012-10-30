@@ -1,5 +1,5 @@
 # inherit from the proprietary version
--include vendor/samsung/g3/BoardConfigVendor.mk
+-include vendor/samsung/galaxy3/BoardConfigVendor.mk
 
 # Board
 TARGET_BOARD_PLATFORM := s5p6442
@@ -13,7 +13,7 @@ TARGET_BOARD_PLATFORM_GPU := fimg
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 TARGET_BOOTLOADER_BOARD_NAME := GT-I5800
 TARGET_OTA_ASSERT_DEVICE := apollo,GT-I5800,GT-I5801
-BOARD_EGL_CFG := vendor/samsung/g3/proprietary/JPM/egl.cfg
+BOARD_EGL_CFG := vendor/samsung/galaxy3/proprietary/JPM/egl.cfg
 BOARD_NO_RGBX_8888 := true
 BOARD_USE_SCREENCAP := true
 BOARD_VENDOR_USE_AKMD := akm8973
@@ -31,12 +31,12 @@ DEFAULT_FB_NUM := 0
 # GPS
 BOARD_GPS_LIBRARIES := libsecgps libsecril-client
 BOARD_USES_GPSSHIM := true
-BOARD_MOBILEDATA_INTERFACE_NAME := "pdp0"
 
 # Misc
 WITH_DEXPREOPT := true
 WITH_JIT := true
 ENABLE_JSC_JIT := true
+BOARD_MOBILEDATA_INTERFACE_NAME := "pdp0"
 JS_ENGINE := v8
 BUILD_WITH_FULL_STAGEFRIGHT := true
 
@@ -58,7 +58,7 @@ BOARD_FORCE_STATIC_A2DP := true
 
 # USB
 RNDIS_DEVICE := "/sys/devices/virtual/sec/switch/tethering"
-BOARD_CUSTOM_USB_CONTROLLER := ../../device/samsung/g3/UsbController.cpp
+BOARD_CUSTOM_USB_CONTROLLER := ../../device/samsung/galaxy3/UsbController.cpp
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/s3c-usbgadget/gadget/lun0/file"
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun0/file"
@@ -94,7 +94,7 @@ BOARD_USES_BOOTMENU := false
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_PROVIDES_BOOTMODE := true
 BOARD_USES_BML_OVER_MTD := false
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/g3/recovery/recovery_ui.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxy3/recovery/recovery_ui.c
 BOARD_BOOT_DEVICE := /dev/block/bml5
 BOARD_DATA_DEVICE := /dev/block/stl7
 BOARD_DATA_FILESYSTEM := ext4

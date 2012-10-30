@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/g3.mk
+    $(LOCAL_DIR)/galaxy3.mk

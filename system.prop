@@ -1,9 +1,9 @@
 #
-# system.prop for G3
+# system.prop for Galaxy 3
 #
 
 
-# ril
+# RILD
 rild.libpath=/system/lib/libril-qc-1.so
 rild.libargs=-d /dev/smd0
 persist.rild.nitz_plmn=
@@ -17,22 +17,22 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 DEVICE_PROVISIONED=1
 
-# lcd
+# LCD DENSITY
 ro.sf.lcd_density=120
 ro.sf.hw_lcd_density=120
 
-# wifi
+# WIFI
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=20
 
 # Define to manage ril to manage modem answere when going from 2G to 3G
 ro.ril.ntmodeglobal=true
 
-## qc ril doesn't repeat the rings
+## QC Ril doesn't repeat the rings
 ro.telephony.call_ring.multiple=false
 ro.telephony.call_ring.delay=3000
 
-#Tweaks of cyanmobile
+# Tweaks of cyanmobile
 ro.com.google.locationfeatures=1
 ro.setupwizard.enable_bypass=1
 dalvik.vm.lockprof.threshold=500
@@ -53,8 +53,6 @@ windowsmgr.max_events_per_sec=150
 debug.performance.tuning=1
 video.accelerate.hw=1
 ro.workaround.noautofocus=1
-persist.sys.themeId=ICStransV3 UOT
-persist.sys.themePackageName=com.uotkitchen.theme.icstransv3
 ro.telephony.call_ring.delay=0
 ro.ril.disable.power.collapse=0
 dalvik.vm.dexopt-flags=m=y

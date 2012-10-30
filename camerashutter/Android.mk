@@ -1,4 +1,4 @@
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),g3)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),galaxy3)
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)

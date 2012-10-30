@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE=g3
+DEVICE=galaxy3
 
 mkdir -p ../../../vendor/samsung/$DEVICE
 
@@ -75,8 +75,8 @@ BOARD_GPS_LIBRARIES := libclientgps libsecgps
 USE_CAMERA_STUB := false
 EOF
 
-mkdir -p ../../../vendor/samsung/g3/overlay/packages/apps/Launcher2/res/layout
-(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/samsung/g3/overlay/packages/apps/Launcher2/res/layout/all_apps.xml
+mkdir -p ../../../vendor/samsung/galaxy3/overlay/packages/apps/Launcher2/res/layout
+(cat << EOF) | sed s/__DEVICE__/$DEVICE/g > ../../../vendor/samsung/galaxy3/overlay/packages/apps/Launcher2/res/layout/all_apps.xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2010 The Android Open Source Project
 
