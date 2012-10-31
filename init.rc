@@ -1,3 +1,0 @@
-#Probably to Get Rom Booted
-setprop ro.squadzone.build 1
-setprop persist.sys.gmaps_hack 1
