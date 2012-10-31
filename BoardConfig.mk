@@ -28,9 +28,6 @@ BOARD_USE_JPEG := true
 
 DEFAULT_FB_NUM := 0
 
-# GPS
-BOARD_USES_GPSSHIM := true
-
 # Misc
 WITH_DEXPREOPT := true
 WITH_JIT := true
