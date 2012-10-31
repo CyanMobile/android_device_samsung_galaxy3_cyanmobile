@@ -1,0 +1,43 @@
+# Sample file to extract required files from an original Samsung Galaxy 3 device
+# This script is not required if you have the proprietary repository
+#
+# This file is the file list used by extract-files.sh
+
+## Vendors
+bin/amix
+bin/aplay
+bin/arec
+bin/rild
+etc/asound.conf
+etc/dbus.conf
+etc/gps.conf
+etc/secomxregistry
+wifi/bcm4329_aps.bin
+wifi/bcm4329_mfg.bin
+wifi/bcm4329_sta.bin
+wifi/nvram_mfg.txt
+wifi/nvram_net.txt
+wifi/wifi.c
+wifi/wifi.conf
+lib/libaudio.so
+lib/libaudiopolicy.so
+lib/libcamera.so
+lib/libOMX.SEC.AVC.Decoder.s5p6442.so
+lib/libOMX.SEC.AVC.Encoder.s5p6442.so
+lib/libOMX.SEC.M4V.Decoder.s5p6442.so
+lib/libOMX.SEC.M4V.Encoder.s5p6442.so
+lib/libril.so
+lib/libsecgps.so
+lib/libsecjpeg.so
+lib/libSEC_OMX_Core.s5p6442.so
+lib/libsec-ril.so
+lib/libsecril-client.so
+lib/libstagefrighthw.so
+lib/egl/libGLES_fimg.so
+lib/hw/copybit.GT-I5800.so
+lib/hw/gralloc.GT-I5800.so
+lib/hw/lights.GT-I5800.so
+lib/hw/sensors.GT-I5800.so
+vendor/firmware/fw_bcm4329.bin
+vendor/firmware/fw_bcm4329_apsta.bin
+xbin/klogtail
