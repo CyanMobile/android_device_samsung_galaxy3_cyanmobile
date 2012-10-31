@@ -10,7 +10,7 @@ TARGET_ARCH_VARIANT_CPU := arm1176jzf-s
 TARGET_GLOBAL_CFLAGS += -mtune=arm1176jzf-s -mfpu=vfp -mfloat-abi=softfp -O3
 TARGET_GLOBAL_CPPFLAGS += -mtune=arm1176jzf-s -mfpu=vfp -mfloat-abi=softfp -O3
 TARGET_BOARD_PLATFORM_GPU := fimg
-BOARD_EGL_CFG := vendor/samsung/galaxy3/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/galaxy3/configs/egl.cfg
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 TARGET_BOOTLOADER_BOARD_NAME := GT-I5800
 TARGET_OTA_ASSERT_DEVICE := apollo,GT-I5800,GT-I5801
