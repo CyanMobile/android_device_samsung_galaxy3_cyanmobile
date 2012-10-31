@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
 # Board-specific init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.apollo.rc:root/init.apollo.rc \
-    $(LOCAL_PATH)/ueventd.pecan.rc:root/ueventd.rc 
+    $(LOCAL_PATH)/ueventd.rc:root/ueventd.rc 
    
 # Touch and Keyboard Maps
 PRODUCT_COPY_FILES += \
