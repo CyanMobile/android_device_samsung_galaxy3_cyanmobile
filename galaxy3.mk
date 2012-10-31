@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
 # MISC
 PRODUCT_PACKAGES += \
     bdaddr_read \
-    gps.GT-I5800 \
     brcm_patchram_plus \
     screencap \
     FM \
