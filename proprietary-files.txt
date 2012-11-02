@@ -19,8 +19,6 @@ etc/wifi/nvram_mfg.txt
 etc/wifi/nvram_net.txt
 etc/wifi/wifi.c
 etc/wifi/wifi.conf
-lib/libaudio.so
-lib/libaudiopolicy.so
 lib/libcamera.so
 lib/libOMX.SEC.AVC.Decoder.s5p6442.so
 lib/libOMX.SEC.AVC.Encoder.s5p6442.so
@@ -34,10 +32,6 @@ lib/libsec-ril.so
 lib/libsecril-client.so
 lib/libstagefrighthw.so
 lib/egl/libGLES_fimg.so
-lib/hw/copybit.GT-I5800.so
-lib/hw/gralloc.GT-I5800.so
-lib/hw/lights.GT-I5800.so
-lib/hw/sensors.GT-I5800.so
 vendor/firmware/fw_bcm4329.bin
 vendor/firmware/fw_bcm4329_apsta.bin
 xbin/klogtail

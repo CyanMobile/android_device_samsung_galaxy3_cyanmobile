@@ -61,16 +61,26 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
-# MISC
+#  Board
 PRODUCT_PACKAGES += \
     bdaddr_read \
+    copybit.GT-I5800 \
+    gralloc.GT-I5800 \
+    sensors.GT-I5800 \
+    lights.GT-I5800 \
+    libaudio \
+    libcamera \
+  
+# Extras
+PRODUCT_PACKAGES += \
     brcm_patchram_plus \
     screencap \
     FM \
     dexpreopt \
-    libcamera \
     LiveWallpapers \
     LiveWallpapersPicker \
+
+    
 
 PRODUCT_LOCALES += ldpi mdpi
 
